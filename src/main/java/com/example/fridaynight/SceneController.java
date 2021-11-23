@@ -21,7 +21,7 @@ public class SceneController {
     private Parent root;
 
     public void scene1(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene1.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene-1-view.fxml"));
         Parent root = loader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
@@ -30,7 +30,7 @@ public class SceneController {
     }
 
     public void scene2(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene2.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene-2-view.fxml"));
         Parent root = loader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
